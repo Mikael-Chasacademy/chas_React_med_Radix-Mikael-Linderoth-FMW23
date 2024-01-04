@@ -142,7 +142,7 @@ export default function App() {
                 <DropdownMenu.Item>
                   <Flex direction="column">
                     <TextField.Root>
-                      <TextField.Slot></TextField.Slot>
+                      <TextField.Slot>Q</TextField.Slot>
                       <TextField.Input placeholder="Search…" />
                     </TextField.Root>
                   </Flex>
@@ -388,141 +388,141 @@ export default function App() {
           </Flex>
           {/*##########################Cards##############################*/}
 
-          {/*########################Diagram##############################*/}
-          {/* <Flex grow="1" gap="3"> */}
-          {/* <Container className="diagram"> */}
-          <Card width="50%">
-            <Flex className="chart" gap="4" p="5">
-              <Overview />
-            </Flex>
-          </Card>
-          {/*########################Diagram##############################*/}
+          {/*########################Overview##############################*/}
+          <Flex className="responsivOverview" gap="3">
+            {/* <Container className="diagram"> */}
+            <Card className="chartCard">
+              <Flex className="chart" gap="4" p="5">
+                <Overview />
+              </Flex>
+            </Card>
+            {/*########################Overview##############################*/}
 
-          {/*########################Recent Sales#########################*/}
-          <Card p="4">
-            <Flex width="100%" p="4" direction="column">
-              <Heading size="3">Recent Sales</Heading>
+            {/*########################Recent Sales#########################*/}
+            <Card p="4">
+              <Flex width="100%" p="4" direction="column">
+                <Heading size="3">Recent Sales</Heading>
 
-              <Text size="2" color="gray">
-                You made 265 sales this month
-              </Text>
-            </Flex>
+                <Text size="2" color="gray">
+                  You made 265 sales this month
+                </Text>
+              </Flex>
 
-            <Table.Root>
-              <Table.Body>
-                <Table.Row align="center">
-                  <Table.RowHeaderCell>
-                    <Flex gap="4">
-                      <Avatar src="src\assets\avatar\01.png"></Avatar>
-                      <Flex direction="column">
-                        <Text size="2" weight="medium">
-                          Olivia Martin
-                        </Text>
-                        <Text size="2" color="gray">
-                          olivia.martin@email.com
-                        </Text>
+              <Table.Root>
+                <Table.Body>
+                  <Table.Row align="center">
+                    <Table.RowHeaderCell>
+                      <Flex gap="4">
+                        <Avatar src="src\assets\avatar\01.png"></Avatar>
+                        <Flex direction="column">
+                          <Text size="2" weight="medium">
+                            Olivia Martin
+                          </Text>
+                          <Text size="2" color="gray">
+                            olivia.martin@email.com
+                          </Text>
+                        </Flex>
                       </Flex>
-                    </Flex>
-                  </Table.RowHeaderCell>
-                  <Table.Cell></Table.Cell>
-                  <Table.Cell>
-                    <Heading size="4" weight="medium">
-                      +$1,999.00
-                    </Heading>
-                  </Table.Cell>
-                </Table.Row>
+                    </Table.RowHeaderCell>
+                    <Table.Cell></Table.Cell>
+                    <Table.Cell>
+                      <Heading size="4" weight="medium">
+                        +$1,999.00
+                      </Heading>
+                    </Table.Cell>
+                  </Table.Row>
 
-                <Table.Row align="center">
-                  <Table.RowHeaderCell>
-                    <Flex gap="4">
-                      <Avatar src="src\assets\avatar\02.png"></Avatar>
-                      <Flex direction="column">
-                        <Text size="2" weight="medium">
-                          Jackson Lee
-                        </Text>
-                        <Text size="2" color="gray">
-                          jackson.lee@email.com
-                        </Text>
+                  <Table.Row align="center">
+                    <Table.RowHeaderCell>
+                      <Flex gap="4">
+                        <Avatar src="src\assets\avatar\02.png"></Avatar>
+                        <Flex direction="column">
+                          <Text size="2" weight="medium">
+                            Jackson Lee
+                          </Text>
+                          <Text size="2" color="gray">
+                            jackson.lee@email.com
+                          </Text>
+                        </Flex>
                       </Flex>
-                    </Flex>
-                  </Table.RowHeaderCell>
-                  <Table.Cell></Table.Cell>
-                  <Table.Cell>
-                    <Heading size="4" weight="medium">
-                      +$39.00
-                    </Heading>
-                  </Table.Cell>
-                </Table.Row>
+                    </Table.RowHeaderCell>
+                    <Table.Cell></Table.Cell>
+                    <Table.Cell>
+                      <Heading size="4" weight="medium">
+                        +$39.00
+                      </Heading>
+                    </Table.Cell>
+                  </Table.Row>
 
-                <Table.Row align="center">
-                  <Table.RowHeaderCell>
-                    <Flex gap="4">
-                      <Avatar src="src\assets\avatar\03.png"></Avatar>
-                      <Flex direction="column">
-                        <Text size="2" weight="medium">
-                          Isabella Nguyen
-                        </Text>
-                        <Text size="2" color="gray">
-                          isabella.nguyen@email.com
-                        </Text>
+                  <Table.Row align="center">
+                    <Table.RowHeaderCell>
+                      <Flex gap="4">
+                        <Avatar src="src\assets\avatar\03.png"></Avatar>
+                        <Flex direction="column">
+                          <Text size="2" weight="medium">
+                            Isabella Nguyen
+                          </Text>
+                          <Text size="2" color="gray">
+                            isabella.nguyen@email.com
+                          </Text>
+                        </Flex>
                       </Flex>
-                    </Flex>
-                  </Table.RowHeaderCell>
-                  <Table.Cell></Table.Cell>
-                  <Table.Cell>
-                    <Heading size="4" weight="medium">
-                      +$299.00
-                    </Heading>
-                  </Table.Cell>
-                </Table.Row>
+                    </Table.RowHeaderCell>
+                    <Table.Cell></Table.Cell>
+                    <Table.Cell>
+                      <Heading size="4" weight="medium">
+                        +$299.00
+                      </Heading>
+                    </Table.Cell>
+                  </Table.Row>
 
-                <Table.Row align="center">
-                  <Table.RowHeaderCell>
-                    <Flex gap="4">
-                      <Avatar src="src\assets\avatar\04.png"></Avatar>
-                      <Flex direction="column">
-                        <Text size="2" weight="medium">
-                          William Kim
-                        </Text>
-                        <Text size="2" color="gray">
-                          william.kim@email.com
-                        </Text>
+                  <Table.Row align="center">
+                    <Table.RowHeaderCell>
+                      <Flex gap="4">
+                        <Avatar src="src\assets\avatar\04.png"></Avatar>
+                        <Flex direction="column">
+                          <Text size="2" weight="medium">
+                            William Kim
+                          </Text>
+                          <Text size="2" color="gray">
+                            william.kim@email.com
+                          </Text>
+                        </Flex>
                       </Flex>
-                    </Flex>
-                  </Table.RowHeaderCell>
-                  <Table.Cell></Table.Cell>
-                  <Table.Cell>
-                    <Heading size="4" weight="medium">
-                      +$99.00
-                    </Heading>
-                  </Table.Cell>
-                </Table.Row>
+                    </Table.RowHeaderCell>
+                    <Table.Cell></Table.Cell>
+                    <Table.Cell>
+                      <Heading size="4" weight="medium">
+                        +$99.00
+                      </Heading>
+                    </Table.Cell>
+                  </Table.Row>
 
-                <Table.Row align="center">
-                  <Table.RowHeaderCell>
-                    <Flex gap="4">
-                      <Avatar src="src\assets\avatar\05.png"></Avatar>
-                      <Flex direction="column">
-                        <Text size="2" weight="medium">
-                          Sofia Davis
-                        </Text>
-                        <Text size="2" color="gray">
-                          sofia.davis@email.com
-                        </Text>
+                  <Table.Row align="center">
+                    <Table.RowHeaderCell>
+                      <Flex gap="4">
+                        <Avatar src="src\assets\avatar\05.png"></Avatar>
+                        <Flex direction="column">
+                          <Text size="2" weight="medium">
+                            Sofia Davis
+                          </Text>
+                          <Text size="2" color="gray">
+                            sofia.davis@email.com
+                          </Text>
+                        </Flex>
                       </Flex>
-                    </Flex>
-                  </Table.RowHeaderCell>
-                  <Table.Cell></Table.Cell>
-                  <Table.Cell>
-                    <Heading size="4" weight="medium">
-                      +$39.00
-                    </Heading>
-                  </Table.Cell>
-                </Table.Row>
-              </Table.Body>
-            </Table.Root>
-          </Card>
-          {/* </Flex> */}
+                    </Table.RowHeaderCell>
+                    <Table.Cell></Table.Cell>
+                    <Table.Cell>
+                      <Heading size="4" weight="medium">
+                        +$39.00
+                      </Heading>
+                    </Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table.Root>
+            </Card>
+          </Flex>
           {/* </Container> */}
           {/*########################Recent Sales#########################*/}
 

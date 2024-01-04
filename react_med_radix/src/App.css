@@ -49,13 +49,26 @@
   grid-template-columns: 1fr 1fr;
 }
 
-/* .diagram {
-  display: flex;
-} */
+.chart {
+  width: 100%;
+}
 
-@media (min-width: 768px) {
+.chartCard {
+  width: 100%;
+}
+
+.responsivOverview {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1080px) {
   .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .responsivOverview {
+    display: flex;
+    flex-direction: row;
   }
 }
